@@ -1,0 +1,42 @@
+@media (max-width: 720px){
+    input[type='file']{
+        display:none
+    }
+
+    label{
+        background-color: #ea5a14;
+        width: 40vw;
+        height: 40vw;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font: normal bold 7vw Roboto;
+        cursor: pointer;
+    }
+
+    label>img{
+        width: 40%;
+    }
+
+    #boxLogo{
+        margin-top:3vh;
+        width: 90vw;
+        height: 40vw;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    
+    .imgLogo{
+        width: 40vw;
+        height: 40vw;
+    }
+
+
+
+
+    
+}

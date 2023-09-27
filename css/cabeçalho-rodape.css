@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --sombra: 2px 2px 4px #00000050;
+    --titulo: bold 7vw roboto, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button{
+    cursor: pointer !important;
+}
+
+
+
+@media (max-width: 720px) {
+
+    #barraPesquisa{
+        width: 100%;
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        height: 6vh;
+    }
+
+    #barraPesquisa input{
+        width: 75%;
+        margin-right: -1px;
+        border: 2px solid #ea5a14;
+        border-radius: 5px 0 0 5px;
+        font-size: 4vw;
+        padding: 2vw;
+    }
+
+    #barraPesquisa input::placeholder{
+        font-style: italic;
+        text-align: center;
+    }
+
+    #barraPesquisa button{
+        width: 25%;
+        background-color: #1a1a1a;
+        color: #fff;
+        font-weight: bold;
+        font-size: 4vw;
+        border-radius: 0 5px 5px 0;
+        height: 100%;
+        margin-left: -1px;
+        border: 2px solid #1a1a1a;
+        cursor: pointer;
+    }
+
+    #barraPesquisa button:hover{
+        background-color: #1a1a1ae8;
+    }
+
+    .larguraPadrao{
+        max-width: 85vw;
+        margin: auto;
+    }
+
+
+    header {
+        background-color: black;
+        min-height: 8vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #topimg {
+        width: 30vw;
+        min-width: 45px;
+        margin: 2vw;
+    }
+
+    #topimg img {
+        width: 100%;
+        margin-left: 5vw;
+        min-height: 5vh;
+    }
+
+    #menu-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        min-width: 40px;
+        max-width: 50px;
+        width: 10vw;
+        height: 5vh;
+        margin-right: 5vw;
+        
+
+    }
+
+    #menu-container div {
+        background-color: #ea5a14;
+        border: 2px solid black;
+        height: 22%;
+        width: 100%;
+        border-radius: 3px;
+
+    }
+
+    #menu-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 65vw;
+        height: 65vh;
+        background-color: #ea5a14;
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        transition-duration: 0.5s;
+        border-radius: 0 0 0 10px;
+        z-index: 99;
+
+    }
+
+    .show-items {
+        position: absolute !important;
+        right: 0 !important;
+        transition-duration: 50ms;
+        display: flex !important;
+        z-index: 99;
+    }
+
+    #menu-items img {
+        align-self: flex-end;
+        margin: 0 6vw;
+        width: 10vw;
+    }
+
+    #menu-items li {
+        margin: 1vh 0;
+        font-size: 6vw;
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+    #menu-items a {
+        color: #fff;
+        font-weight: bold;
+        text-shadow: 1px 1px 3px #1a1a1a;
+        width: 100%;
+    }
+
+    #menu-items div{
+        width: 80%;
+        height: 0.1vh;
+        background-color: #1a1a1a;
+    }
+
+    footer {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        padding: 4vw;
+        width: 100vw;
+    }
+
+    footer>img {
+        width: 30vw;
+
+    }
+
+    footer a {
+        color: white;
+        font: 500 3.5vw Roboto, sans-serif;
+
+    }
+
+    footer h2 {
+        font: bold 4.5vw Roboto, sans-serif;
+        color: white;
+        margin-top: 0vh !important;
+    }
+
+    #cadastro-rodape a {
+        display: block;
+        margin-top: 1vh;
+    }
+
+    #redesSociais img {
+        width: 7vw;
+        margin-top: 1vh;
+        margin-right: 2vw;
+    }
+
+    .btn{
+        padding: 4vw;
+        background-color: #ea5a14;
+        font: bold 6vw roboto, sans-serif;
+        color: white;
+        margin: 5vw auto;
+        width: 50%;
+        border-radius: 10px;
+        box-shadow: var(--sombra);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

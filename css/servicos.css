@@ -1,0 +1,208 @@
+@media (max-width: 720px) {
+
+  .larguraPadrao {
+    max-width: 85vw;
+    margin: auto;
+  }
+
+  #barraPesquisa {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    height: 6vh;
+  }
+
+  #barraPesquisa input {
+    width: 75%;
+    margin-right: -1px;
+    border: 2px solid #ea5a14;
+    border-radius: 5px 0 0 5px;
+    font-size: 4vw;
+    padding: 2vw;
+  }
+
+  #barraPesquisa input::placeholder {
+    font-style: italic;
+    text-align: center;
+  }
+
+  #barraPesquisa button {
+    width: 25%;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-weight: bold;
+    font-size: 4vw;
+    border-radius: 0 5px 5px 0;
+    height: 100%;
+    margin-left: -1px;
+    border: 2px solid #1a1a1a;
+    cursor: pointer;
+  }
+
+  #barraPesquisa button:hover {
+    background-color: #1a1a1ae8;
+  }
+
+
+  main>div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vh !important; 
+  }
+
+  main>div>h1{
+    color: #ea5a14;
+    font: var(--titulo);
+  }
+
+  #filtrar-container{
+    width: 6vw;
+
+  }
+
+  #filtrar-items{
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    width: 65vw;
+    height: 100vh;
+    padding: 3vw 3vw 3vw 3vw;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    transition-duration: 0.5s;
+  }
+
+  .show-filtro{
+    right: 0 !important;
+    transition-duration: 0.5s;
+  }
+
+  #filtrar-items form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80%;
+  }
+
+  #filtrar-items>img{
+    width: 10% !important;
+    align-self: flex-end;
+  }
+
+  #filtrar-items form h2{
+    color: #ea5a14;
+    font: bold 5vw Roboto, sans-serif;
+    border-bottom: solid #1a1a1a 0.5vh;
+  }
+
+  #filtrar-items form label{
+    font: bold 3.5vw Roboto, sans-serif;
+    
+  }
+
+  #filtrar-items form h3{
+    font: bold 3.5vw Roboto, sans-serif;
+    
+  }
+
+  #filtrar-items input{
+    border: solid #ea5a14 0.5vw;
+    border-radius: 5px;
+    padding: 2vw;
+    max-width: 20vw;
+  }
+
+  #filtrar-items button{
+        padding: 3vw;
+        background-color: #ea5a14;
+        font: bold 5vw roboto, sans-serif;
+        color: white;
+        width: 80%;
+        align-self: center;
+        border-radius: 10px;
+        box-shadow: var(--sombra);
+        margin-top: 3vh;
+  }
+
+
+ #filtrar-container img{
+  width: 100%;
+ }
+
+
+
+  #servicos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85vw;
+    margin: auto;
+  }
+
+
+  .anuncios {
+    display: flex;
+    justify-content: space-between;
+    height: 25vh;
+    margin: 2vw 0 2vw 0;
+    background-color: #1a1a1aec;
+    border-radius: 10px;
+    padding: 0 8vw 0 8vw;
+  }
+
+  .anuncios:first-child {
+    margin-top: 3vh;
+  }
+
+  .anuncios img {
+    width: 40%;
+    min-height: 20vh;
+    border-radius: 10px;
+    align-self: center;
+    min-width: 50%;
+  }
+
+  .anuncios h2 {
+    color: #ea5a14;
+    font: bold 3.5vw roboto, sans-serif;
+  }
+
+  .anuncios p {
+    font: 500 3vw roboto, sans-serif;
+    color: white;
+  }
+
+  .informacoes-anuncio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+  }
+
+  .informacoes-anuncio h3{
+    color: #f57636;
+      font: bold 3vw roboto, sans-serif;
+    }
+
+  #navegacao {
+    display: flex;
+    justify-content: space-around;
+    margin: 5vh auto;
+    gap: 10vw;
+  }
+
+  #navegacao a button {
+    width: 100%;
+    padding: 3vw;
+    background-color: #ea5a14;
+    font: bold 5vw roboto, sans-serif;
+    color: white;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+  }
+
+}
